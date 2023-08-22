@@ -7,7 +7,7 @@ const StartGame = () => {
         <div>
       <img src="./images/dices.png" alt="Dices" />
       </div>
-      <div className="content" >
+      <div className="content">
         <h1>Dice Game</h1>
         <Button>Play Now</Button>
       </div>
@@ -25,6 +25,10 @@ const Container = styled.div`
   justify-content: center;
   align-items: center;
   .content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end; /* Aligns the content to the right */
+    flex-grow: 1; 
     h1{
         font-size: 96px;
         white-space: nowrap;
